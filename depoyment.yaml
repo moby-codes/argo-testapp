@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+uid: hello-ameya
+metadata:
+  name: hello-ameya
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-ameya
+  template:
+    metadata:
+      labels:
+        app: hello-ameya
+    spec:
+      containers:
+      - name: hello-ameya
+        image: nginx:latest
+        ports:
+        - containerPort: 80

@@ -35,3 +35,14 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+*.envrc
+.envrc
+
+*.crt
+*.key
+localhost.crt
+localhost.key
+
+# Mac system files
+.DS_Store
